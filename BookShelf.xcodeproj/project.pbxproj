@@ -11,6 +11,9 @@
 		7BB0BFA421ADDECB00787427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB0BFA321ADDECB00787427 /* AppDelegate.swift */; };
 		7BB0BFAB21ADDECC00787427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BB0BFAA21ADDECC00787427 /* Assets.xcassets */; };
 		7BB0BFAE21ADDECC00787427 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB0BFAC21ADDECC00787427 /* LaunchScreen.storyboard */; };
+		7BB0BFB821ADE10F00787427 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB0BFB721ADE10F00787427 /* Login.storyboard */; };
+		7BB0BFBA21ADE13900787427 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB0BFB921ADE13900787427 /* LoginViewController.swift */; };
+		7BB0BFBC21ADE14800787427 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB0BFBB21ADE14800787427 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		7BB0BFAA21ADDECC00787427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BB0BFAD21ADDECC00787427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BB0BFAF21ADDECC00787427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BB0BFB721ADE10F00787427 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		7BB0BFB921ADE13900787427 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7BB0BFBB21ADE14800787427 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		EDE55B6C1B18E957EEF2F945 /* Pods-BookShelf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookShelf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookShelf/Pods-BookShelf.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +66,9 @@
 				7BB0BFA321ADDECB00787427 /* AppDelegate.swift */,
 				7BB0BFAA21ADDECC00787427 /* Assets.xcassets */,
 				7BB0BFAC21ADDECC00787427 /* LaunchScreen.storyboard */,
+				7BB0BFB721ADE10F00787427 /* Login.storyboard */,
+				7BB0BFB921ADE13900787427 /* LoginViewController.swift */,
+				7BB0BFBB21ADE14800787427 /* RegisterViewController.swift */,
 				7BB0BFAF21ADDECC00787427 /* Info.plist */,
 			);
 			path = BookShelf;
@@ -144,6 +153,7 @@
 			files = (
 				7BB0BFAE21ADDECC00787427 /* LaunchScreen.storyboard in Resources */,
 				7BB0BFAB21ADDECC00787427 /* Assets.xcassets in Resources */,
+				7BB0BFB821ADE10F00787427 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +209,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BB0BFBC21ADE14800787427 /* RegisterViewController.swift in Sources */,
+				7BB0BFBA21ADE13900787427 /* LoginViewController.swift in Sources */,
 				7BB0BFA421ADDECB00787427 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
