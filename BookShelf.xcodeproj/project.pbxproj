@@ -21,6 +21,7 @@
 		7BB0BFAA21ADDECC00787427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BB0BFAD21ADDECC00787427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BB0BFAF21ADDECC00787427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD29C71521ADE14700D34D6D /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		EDE55B6C1B18E957EEF2F945 /* Pods-BookShelf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookShelf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookShelf/Pods-BookShelf.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +61,7 @@
 				7BB0BFA321ADDECB00787427 /* AppDelegate.swift */,
 				7BB0BFAA21ADDECC00787427 /* Assets.xcassets */,
 				7BB0BFAC21ADDECC00787427 /* LaunchScreen.storyboard */,
+				DD29C71521ADE14700D34D6D /* Storyboard.storyboard */,
 				7BB0BFAF21ADDECC00787427 /* Info.plist */,
 			);
 			path = BookShelf;
