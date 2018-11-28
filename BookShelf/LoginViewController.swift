@@ -7,7 +7,32 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
+    
+    //Mark:- Variables
+    
+    
+    
+    //Mark:- StoryBoard
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    
+    
+    //Mark:- Methods
+    
+    @IBAction func loginTapped(_ sender: Any) {
+        
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+        @IBAction func unwindToLogin(segue:UIStoryboardSegue) { }
+    
     
 }

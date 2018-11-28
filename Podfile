@@ -8,5 +8,6 @@ target 'BookShelf' do
   pod 'Firebase/Storage'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  pod 'Firebase/Firestore'
 
 end
