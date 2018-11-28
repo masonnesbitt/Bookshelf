@@ -12,7 +12,7 @@ import Firebase
 class LoginViewController: UIViewController {
     
     //Mark:- Variables
-    
+    var db: Firestore!
     
     
     //Mark:- StoryBoard
@@ -25,7 +25,23 @@ class LoginViewController: UIViewController {
     //Mark:- Methods
     
     @IBAction func loginTapped(_ sender: Any) {
-        
+        if emailTextField.text != nil && emailTextField.text != "" &&
+            passwordTextField.text != nil && passwordTextField.text != "" {
+            loginUser()
+        }
+    }
+    
+    func loginUser() {
+        Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
+            // ...
+            if let userError = error {
+                print("didn't log in")
+                print(userError.localizedDescription)
+            } else {
+                print("logged in")
+               self.performSegue(withIdentifier: "loggedIn", sender: self)
+            }
+        }
     }
     
     override func viewDidLoad() {
