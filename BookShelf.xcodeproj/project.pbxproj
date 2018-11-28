@@ -11,6 +11,9 @@
 		7BB0BFA421ADDECB00787427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB0BFA321ADDECB00787427 /* AppDelegate.swift */; };
 		7BB0BFAB21ADDECC00787427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BB0BFAA21ADDECC00787427 /* Assets.xcassets */; };
 		7BB0BFAE21ADDECC00787427 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB0BFAC21ADDECC00787427 /* LaunchScreen.storyboard */; };
+		B749A97021AEF8CD0043FF3C /* RecipeCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B749A96F21AEF8CD0043FF3C /* RecipeCreationViewController.swift */; };
+		B749A97321AF18010043FF3C /* homePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B749A97221AF18010043FF3C /* homePage.storyboard */; };
+		B749A97521AF1E370043FF3C /* profilePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B749A97421AF1E370043FF3C /* profilePage.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		7BB0BFAA21ADDECC00787427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BB0BFAD21ADDECC00787427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BB0BFAF21ADDECC00787427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B749A96F21AEF8CD0043FF3C /* RecipeCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCreationViewController.swift; sourceTree = "<group>"; };
+		B749A97221AF18010043FF3C /* homePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = homePage.storyboard; sourceTree = "<group>"; };
+		B749A97421AF1E370043FF3C /* profilePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = profilePage.storyboard; sourceTree = "<group>"; };
 		EDE55B6C1B18E957EEF2F945 /* Pods-BookShelf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookShelf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookShelf/Pods-BookShelf.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,7 +65,8 @@
 			children = (
 				7BB0BFA321ADDECB00787427 /* AppDelegate.swift */,
 				7BB0BFAA21ADDECC00787427 /* Assets.xcassets */,
-				7BB0BFAC21ADDECC00787427 /* LaunchScreen.storyboard */,
+				B749A97121AF17890043FF3C /* Storyboards */,
+				B749A96E21AEF8590043FF3C /* ViewControllers */,
 				7BB0BFAF21ADDECC00787427 /* Info.plist */,
 			);
 			path = BookShelf;
@@ -72,6 +79,24 @@
 				6C14CB88A659E05D4799682E /* Pods-BookShelf.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B749A96E21AEF8590043FF3C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B749A96F21AEF8CD0043FF3C /* RecipeCreationViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B749A97121AF17890043FF3C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7BB0BFAC21ADDECC00787427 /* LaunchScreen.storyboard */,
+				B749A97221AF18010043FF3C /* homePage.storyboard */,
+				B749A97421AF1E370043FF3C /* profilePage.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		E70C1DE5940D48EF15D1B7C3 /* Frameworks */ = {
@@ -143,7 +168,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BB0BFAE21ADDECC00787427 /* LaunchScreen.storyboard in Resources */,
+				B749A97321AF18010043FF3C /* homePage.storyboard in Resources */,
 				7BB0BFAB21ADDECC00787427 /* Assets.xcassets in Resources */,
+				B749A97521AF1E370043FF3C /* profilePage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BB0BFA421ADDECB00787427 /* AppDelegate.swift in Sources */,
+				B749A97021AEF8CD0043FF3C /* RecipeCreationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
