@@ -37,8 +37,8 @@ class RegisterViewController: UIViewController {
                     alert.addAction(UIAlertAction(title: "Return", style: .default, handler: { action in
                     }))
                     self.present(alert, animated: true, completion: nil)
-                    return
                     print(error?.localizedDescription as Any)
+                    return
                 }
                 print(user) // silence warning
                 // Creation was successful, we can now create the user in the database!
@@ -58,7 +58,7 @@ class RegisterViewController: UIViewController {
         ]) { (error) in
             if error != nil {
                 // An error occured before the user data could be finalized. Captured here.
-                print(error?.localizedDescription)
+                print(error?.localizedDescription as Any)
                 let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Return", style: .default, handler: { action in
                 }))
