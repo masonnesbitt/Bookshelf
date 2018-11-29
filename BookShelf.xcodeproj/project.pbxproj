@@ -14,6 +14,7 @@
 		B749A97021AEF8CD0043FF3C /* RecipeCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B749A96F21AEF8CD0043FF3C /* RecipeCreationViewController.swift */; };
 		B749A97321AF18010043FF3C /* homePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B749A97221AF18010043FF3C /* homePage.storyboard */; };
 		B749A97521AF1E370043FF3C /* profilePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B749A97421AF1E370043FF3C /* profilePage.storyboard */; };
+		B7CB572921B0481200039BFC /* viewBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7CB572821B0481200039BFC /* viewBook.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		B749A96F21AEF8CD0043FF3C /* RecipeCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCreationViewController.swift; sourceTree = "<group>"; };
 		B749A97221AF18010043FF3C /* homePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = homePage.storyboard; sourceTree = "<group>"; };
 		B749A97421AF1E370043FF3C /* profilePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = profilePage.storyboard; sourceTree = "<group>"; };
+		B7CB572821B0481200039BFC /* viewBook.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = viewBook.storyboard; sourceTree = "<group>"; };
 		EDE55B6C1B18E957EEF2F945 /* Pods-BookShelf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookShelf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookShelf/Pods-BookShelf.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 				7BB0BFAC21ADDECC00787427 /* LaunchScreen.storyboard */,
 				B749A97221AF18010043FF3C /* homePage.storyboard */,
 				B749A97421AF1E370043FF3C /* profilePage.storyboard */,
+				B7CB572821B0481200039BFC /* viewBook.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				7BB0BFAE21ADDECC00787427 /* LaunchScreen.storyboard in Resources */,
 				B749A97321AF18010043FF3C /* homePage.storyboard in Resources */,
 				7BB0BFAB21ADDECC00787427 /* Assets.xcassets in Resources */,
+				B7CB572921B0481200039BFC /* viewBook.storyboard in Resources */,
 				B749A97521AF1E370043FF3C /* profilePage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
