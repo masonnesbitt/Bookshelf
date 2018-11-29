@@ -11,6 +11,8 @@
 		7BB0BFA421ADDECB00787427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB0BFA321ADDECB00787427 /* AppDelegate.swift */; };
 		7BB0BFAB21ADDECC00787427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BB0BFAA21ADDECC00787427 /* Assets.xcassets */; };
 		7BB0BFAE21ADDECC00787427 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB0BFAC21ADDECC00787427 /* LaunchScreen.storyboard */; };
+		DD29C71721B03F2900D34D6D /* recipescreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD29C71621B03F2900D34D6D /* recipescreen.storyboard */; };
+		DD29C71921B0417C00D34D6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD29C71821B0417C00D34D6D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +23,8 @@
 		7BB0BFAA21ADDECC00787427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BB0BFAD21ADDECC00787427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BB0BFAF21ADDECC00787427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD29C71521ADE14700D34D6D /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		DD29C71621B03F2900D34D6D /* recipescreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = recipescreen.storyboard; sourceTree = "<group>"; };
+		DD29C71821B0417C00D34D6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EDE55B6C1B18E957EEF2F945 /* Pods-BookShelf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookShelf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookShelf/Pods-BookShelf.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,8 +64,9 @@
 				7BB0BFA321ADDECB00787427 /* AppDelegate.swift */,
 				7BB0BFAA21ADDECC00787427 /* Assets.xcassets */,
 				7BB0BFAC21ADDECC00787427 /* LaunchScreen.storyboard */,
-				DD29C71521ADE14700D34D6D /* Storyboard.storyboard */,
 				7BB0BFAF21ADDECC00787427 /* Info.plist */,
+				DD29C71821B0417C00D34D6D /* GoogleService-Info.plist */,
+				DD29C71621B03F2900D34D6D /* recipescreen.storyboard */,
 			);
 			path = BookShelf;
 			sourceTree = "<group>";
@@ -144,6 +148,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD29C71721B03F2900D34D6D /* recipescreen.storyboard in Resources */,
+				DD29C71921B0417C00D34D6D /* GoogleService-Info.plist in Resources */,
 				7BB0BFAE21ADDECC00787427 /* LaunchScreen.storyboard in Resources */,
 				7BB0BFAB21ADDECC00787427 /* Assets.xcassets in Resources */,
 			);
@@ -342,6 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BookShelf/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -360,6 +367,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BookShelf/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
