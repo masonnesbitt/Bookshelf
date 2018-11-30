@@ -18,6 +18,7 @@
 		B780FF3221B1817200FD2194 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B780FF3121B1817200FD2194 /* GoogleService-Info.plist */; };
 		B780FF3421B1872600FD2194 /* seachOnProfilePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B780FF3321B1872600FD2194 /* seachOnProfilePage.storyboard */; };
 		B780FF3621B18AE800FD2194 /* yourProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B780FF3521B18AE800FD2194 /* yourProfile.storyboard */; };
+		B780FF3821B198EC00FD2194 /* editProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B780FF3721B198EC00FD2194 /* editProfile.storyboard */; };
 		B7CB572921B0481200039BFC /* viewBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7CB572821B0481200039BFC /* viewBook.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		B780FF3121B1817200FD2194 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B780FF3321B1872600FD2194 /* seachOnProfilePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = seachOnProfilePage.storyboard; sourceTree = "<group>"; };
 		B780FF3521B18AE800FD2194 /* yourProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = yourProfile.storyboard; sourceTree = "<group>"; };
+		B780FF3721B198EC00FD2194 /* editProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = editProfile.storyboard; sourceTree = "<group>"; };
 		B7CB572821B0481200039BFC /* viewBook.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = viewBook.storyboard; sourceTree = "<group>"; };
 		EDE55B6C1B18E957EEF2F945 /* Pods-BookShelf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookShelf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookShelf/Pods-BookShelf.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +112,7 @@
 				B780FF2D21B17F1200FD2194 /* searchPage.storyboard */,
 				B780FF3321B1872600FD2194 /* seachOnProfilePage.storyboard */,
 				B780FF3521B18AE800FD2194 /* yourProfile.storyboard */,
+				B780FF3721B198EC00FD2194 /* editProfile.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B780FF3821B198EC00FD2194 /* editProfile.storyboard in Resources */,
 				7BB0BFAE21ADDECC00787427 /* LaunchScreen.storyboard in Resources */,
 				B749A97321AF18010043FF3C /* homePage.storyboard in Resources */,
 				7BB0BFAB21ADDECC00787427 /* Assets.xcassets in Resources */,
