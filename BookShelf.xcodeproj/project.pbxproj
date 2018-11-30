@@ -20,6 +20,7 @@
 		B780FF3621B18AE800FD2194 /* yourProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B780FF3521B18AE800FD2194 /* yourProfile.storyboard */; };
 		B780FF3821B198EC00FD2194 /* editProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B780FF3721B198EC00FD2194 /* editProfile.storyboard */; };
 		B780FF3A21B1B98F00FD2194 /* clickedFromHomeOptionsPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B780FF3921B1B98F00FD2194 /* clickedFromHomeOptionsPage.storyboard */; };
+		B780FF3C21B1BDA300FD2194 /* clickedOnOptionPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B780FF3B21B1BDA300FD2194 /* clickedOnOptionPage.storyboard */; };
 		B7CB572921B0481200039BFC /* viewBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7CB572821B0481200039BFC /* viewBook.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		B780FF3521B18AE800FD2194 /* yourProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = yourProfile.storyboard; sourceTree = "<group>"; };
 		B780FF3721B198EC00FD2194 /* editProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = editProfile.storyboard; sourceTree = "<group>"; };
 		B780FF3921B1B98F00FD2194 /* clickedFromHomeOptionsPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = clickedFromHomeOptionsPage.storyboard; sourceTree = "<group>"; };
+		B780FF3B21B1BDA300FD2194 /* clickedOnOptionPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = clickedOnOptionPage.storyboard; sourceTree = "<group>"; };
 		B7CB572821B0481200039BFC /* viewBook.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = viewBook.storyboard; sourceTree = "<group>"; };
 		EDE55B6C1B18E957EEF2F945 /* Pods-BookShelf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookShelf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookShelf/Pods-BookShelf.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +118,7 @@
 				B780FF3521B18AE800FD2194 /* yourProfile.storyboard */,
 				B780FF3721B198EC00FD2194 /* editProfile.storyboard */,
 				B780FF3921B1B98F00FD2194 /* clickedFromHomeOptionsPage.storyboard */,
+				B780FF3B21B1BDA300FD2194 /* clickedOnOptionPage.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				B780FF3421B1872600FD2194 /* seachOnProfilePage.storyboard in Resources */,
 				B780FF2E21B17F1200FD2194 /* searchPage.storyboard in Resources */,
 				B7CB572921B0481200039BFC /* viewBook.storyboard in Resources */,
+				B780FF3C21B1BDA300FD2194 /* clickedOnOptionPage.storyboard in Resources */,
 				B780FF3621B18AE800FD2194 /* yourProfile.storyboard in Resources */,
 				B749A97521AF1E370043FF3C /* profilePage.storyboard in Resources */,
 				B780FF3A21B1B98F00FD2194 /* clickedFromHomeOptionsPage.storyboard in Resources */,
