@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="jDp-0W-X68">
-                                <rect key="frame" x="20" y="70" width="335" height="547"/>
+                                <rect key="frame" x="20" y="70" width="335" height="567"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pck-ib-ROw">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="20.5"/>
@@ -28,46 +28,46 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GM6-48-WST">
-                                        <rect key="frame" x="0.0" y="38" width="335" height="30"/>
+                                        <rect key="frame" x="0.0" y="41.5" width="335" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Description:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRH-tc-9Av">
-                                        <rect key="frame" x="0.0" y="85.5" width="335" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="92.5" width="335" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8rw-Ck-h28">
-                                        <rect key="frame" x="0.0" y="124" width="335" height="30"/>
+                                        <rect key="frame" x="0.0" y="134" width="335" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2H6-Zp-4SJ">
-                                        <rect key="frame" x="0.0" y="171.5" width="335" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="184.5" width="335" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h6Z-yt-fEy">
-                                        <rect key="frame" x="0.0" y="209.5" width="335" height="30"/>
+                                        <rect key="frame" x="0.0" y="226" width="335" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Photo:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Dw-Fn-FA9">
-                                        <rect key="frame" x="0.0" y="257" width="335" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="277" width="335" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mWQ-Wb-PWd">
-                                        <rect key="frame" x="0.0" y="277.5" width="335" height="233.5"/>
+                                        <rect key="frame" x="0.0" y="297.5" width="335" height="233.5"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cs-eK-vta">
-                                        <rect key="frame" x="0.0" y="511" width="335" height="36"/>
+                                        <rect key="frame" x="0.0" y="531" width="335" height="36"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Add Book"/>
@@ -80,7 +80,7 @@
                             <constraint firstItem="jDp-0W-X68" firstAttribute="leading" secondItem="wy3-Gc-qUK" secondAttribute="leading" constant="20" id="8U2-bz-CYQ"/>
                             <constraint firstItem="jDp-0W-X68" firstAttribute="top" secondItem="wy3-Gc-qUK" secondAttribute="top" constant="50" id="lZA-EQ-ZCw"/>
                             <constraint firstItem="wy3-Gc-qUK" firstAttribute="trailing" secondItem="jDp-0W-X68" secondAttribute="trailing" constant="20" id="y2G-5Y-UWL"/>
-                            <constraint firstItem="wy3-Gc-qUK" firstAttribute="bottom" secondItem="jDp-0W-X68" secondAttribute="bottom" constant="50" id="zo0-MZ-XUx"/>
+                            <constraint firstItem="wy3-Gc-qUK" firstAttribute="bottom" secondItem="jDp-0W-X68" secondAttribute="bottom" constant="30" id="zo0-MZ-XUx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wy3-Gc-qUK"/>
                     </view>
