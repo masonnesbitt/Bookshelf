@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="dIW-7O-0SM">
-                                <rect key="frame" x="20" y="70" width="335" height="497"/>
+                                <rect key="frame" x="20" y="50" width="335" height="517"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVh-LK-SAO">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="24"/>
@@ -28,37 +28,36 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gRR-Ta-gMS">
-                                        <rect key="frame" x="0.0" y="24" width="335" height="30"/>
+                                        <rect key="frame" x="0.0" y="28" width="335" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Your Location:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oz3-fV-3P1">
-                                        <rect key="frame" x="0.0" y="54" width="335" height="24"/>
+                                        <rect key="frame" x="0.0" y="62" width="335" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" red="0.0" green="0.031093596179999999" blue="0.86680294690000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z29-rj-ZrE">
-                                        <rect key="frame" x="0.0" y="78" width="335" height="30"/>
+                                        <rect key="frame" x="0.0" y="90" width="335" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Your Image:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPq-Mv-RdG">
-                                        <rect key="frame" x="0.0" y="108" width="335" height="24"/>
+                                        <rect key="frame" x="0.0" y="124" width="335" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" red="0.0" green="0.031093596179999999" blue="0.86680294690000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NxV-Z7-jiC">
-                                        <rect key="frame" x="0.0" y="132" width="335" height="365"/>
+                                        <rect key="frame" x="0.0" y="152" width="335" height="365"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gie-xd-ycu">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gie-xd-ycu">
                                 <rect key="frame" x="105" y="587" width="165" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Done Editing">
                                     <color key="titleColor" red="0.0" green="1" blue="0.29934893559999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -67,10 +66,13 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="OgW-iR-9js" firstAttribute="trailing" secondItem="gie-xd-ycu" secondAttribute="trailing" constant="105" id="3KF-i0-cFf"/>
                             <constraint firstItem="OgW-iR-9js" firstAttribute="bottom" secondItem="dIW-7O-0SM" secondAttribute="bottom" constant="100" id="715-XE-Itl"/>
+                            <constraint firstItem="gie-xd-ycu" firstAttribute="leading" secondItem="OgW-iR-9js" secondAttribute="leading" constant="105" id="BWx-ov-9Ge"/>
                             <constraint firstItem="dIW-7O-0SM" firstAttribute="leading" secondItem="OgW-iR-9js" secondAttribute="leading" constant="20" id="NU4-qr-WJH"/>
+                            <constraint firstItem="gie-xd-ycu" firstAttribute="top" secondItem="dIW-7O-0SM" secondAttribute="bottom" constant="20" id="Oq0-eP-elN"/>
                             <constraint firstItem="OgW-iR-9js" firstAttribute="trailing" secondItem="dIW-7O-0SM" secondAttribute="trailing" constant="20" id="nX5-RO-c34"/>
-                            <constraint firstItem="dIW-7O-0SM" firstAttribute="top" secondItem="OgW-iR-9js" secondAttribute="top" constant="50" id="rn1-y6-04d"/>
+                            <constraint firstItem="dIW-7O-0SM" firstAttribute="top" secondItem="OgW-iR-9js" secondAttribute="top" constant="30" id="rn1-y6-04d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OgW-iR-9js"/>
                     </view>
