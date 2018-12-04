@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Hh9-Z4-9yI">
+            <objects>
+                <viewController id="iWz-zk-6dJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iyG-k2-3f1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3u-yQ-Pau">
+                                <rect key="frame" x="163" y="55" width="49" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YpE-Jv-McK">
+                                <rect key="frame" x="115" y="144.5" width="145" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="wtP-gy-htg"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZV3-jz-QxW">
+                                <rect key="frame" x="67" y="324.5" width="241" height="30"/>
+                                <color key="backgroundColor" red="0.92369656739999995" green="0.81537581110000001" blue="0.11058001319999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Search This User's Bookshelf">
+                                    <color key="titleColor" red="0.0" green="0.031093596179999999" blue="0.86680294690000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L7f-S0-FQp">
+                                <rect key="frame" x="20" y="374.5" width="335" height="272.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LO-cC-gsW">
+                                <rect key="frame" x="154.5" y="99" width="66" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IA1-P1-0Qc" firstAttribute="trailing" secondItem="Y3u-yQ-Pau" secondAttribute="trailing" constant="163" id="4YT-k9-GYv"/>
+                            <constraint firstItem="IA1-P1-0Qc" firstAttribute="bottom" secondItem="L7f-S0-FQp" secondAttribute="bottom" constant="20" id="87M-Wn-bVT"/>
+                            <constraint firstItem="Y3u-yQ-Pau" firstAttribute="leading" secondItem="IA1-P1-0Qc" secondAttribute="leading" constant="163" id="GO8-vc-q3W"/>
+                            <constraint firstItem="ZV3-jz-QxW" firstAttribute="leading" secondItem="IA1-P1-0Qc" secondAttribute="leading" constant="67" id="NyM-Ou-0c7"/>
+                            <constraint firstItem="YpE-Jv-McK" firstAttribute="top" secondItem="1LO-cC-gsW" secondAttribute="bottom" constant="25" id="Sej-Jh-FqA"/>
+                            <constraint firstItem="L7f-S0-FQp" firstAttribute="top" secondItem="ZV3-jz-QxW" secondAttribute="bottom" constant="20" id="TjH-s0-Qb3"/>
+                            <constraint firstItem="1LO-cC-gsW" firstAttribute="top" secondItem="Y3u-yQ-Pau" secondAttribute="bottom" constant="20" id="WxN-Yf-8Bm"/>
+                            <constraint firstItem="YpE-Jv-McK" firstAttribute="leading" secondItem="IA1-P1-0Qc" secondAttribute="leading" constant="115" id="drH-8D-Cm7"/>
+                            <constraint firstItem="IA1-P1-0Qc" firstAttribute="trailing" secondItem="YpE-Jv-McK" secondAttribute="trailing" constant="115" id="e4W-7T-gEm"/>
+                            <constraint firstItem="IA1-P1-0Qc" firstAttribute="trailing" secondItem="1LO-cC-gsW" secondAttribute="trailing" constant="154.5" id="eVG-zw-RGc"/>
+                            <constraint firstItem="Y3u-yQ-Pau" firstAttribute="top" secondItem="IA1-P1-0Qc" secondAttribute="top" constant="35" id="iTf-He-4eF"/>
+                            <constraint firstItem="1LO-cC-gsW" firstAttribute="leading" secondItem="IA1-P1-0Qc" secondAttribute="leading" constant="154.5" id="lTn-r5-Zim"/>
+                            <constraint firstItem="L7f-S0-FQp" firstAttribute="leading" secondItem="IA1-P1-0Qc" secondAttribute="leading" constant="20" id="ndY-HQ-tdX"/>
+                            <constraint firstItem="IA1-P1-0Qc" firstAttribute="trailing" secondItem="L7f-S0-FQp" secondAttribute="trailing" constant="20" id="qSf-gm-smT"/>
+                            <constraint firstItem="IA1-P1-0Qc" firstAttribute="trailing" secondItem="ZV3-jz-QxW" secondAttribute="trailing" constant="67" id="swQ-Ag-PeQ"/>
+                            <constraint firstItem="ZV3-jz-QxW" firstAttribute="top" secondItem="YpE-Jv-McK" secondAttribute="bottom" constant="50" id="vDr-pC-ydS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IA1-P1-0Qc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NWR-7l-26i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="158.77061469265368"/>
+        </scene>
+    </scenes>
+</document>
