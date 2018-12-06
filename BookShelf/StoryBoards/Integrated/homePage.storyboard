@@ -18,6 +18,14 @@
             </objects>
             <point key="canvasLocation" x="783" y="-556"/>
         </scene>
+        <!--addBook-->
+        <scene sceneID="qAB-dv-qGY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="addBook" referencedIdentifier="addBook" id="0mU-U7-aYW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AbX-W2-0gZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1133" y="-391"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="D4D-pe-MAI">
             <objects>
@@ -112,11 +120,13 @@
                                     <segue destination="UnE-0P-Yip" kind="show" identifier="logoutSegue" id="3g0-W2-IGS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmU-ux-hlB">
-                                <rect key="frame" x="145" y="41" width="85" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmU-ux-hlB">
+                                <rect key="frame" x="145" y="78" width="85" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Add Book"/>
+                                <connections>
+                                    <segue destination="0mU-U7-aYW" kind="show" id="7qg-Q4-2JD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -124,8 +134,11 @@
                             <constraint firstItem="Msa-OM-fce" firstAttribute="bottom" secondItem="37W-ok-mz1" secondAttribute="bottom" constant="90" id="1XI-a8-vGi"/>
                             <constraint firstItem="4vy-Qx-P2W" firstAttribute="top" secondItem="9jC-Og-dD6" secondAttribute="bottom" constant="125" id="403-7u-Jbn"/>
                             <constraint firstItem="9jC-Og-dD6" firstAttribute="top" secondItem="q2x-Xc-me4" secondAttribute="bottom" constant="75" id="5YO-iX-OX3"/>
+                            <constraint firstItem="q2x-Xc-me4" firstAttribute="leading" secondItem="qmU-ux-hlB" secondAttribute="trailing" constant="52" id="7St-ir-VSx"/>
+                            <constraint firstItem="qmU-ux-hlB" firstAttribute="top" secondItem="Msa-OM-fce" secondAttribute="top" constant="14" id="Ohv-Bg-2wj"/>
                             <constraint firstItem="Msa-OM-fce" firstAttribute="trailing" secondItem="q2x-Xc-me4" secondAttribute="trailing" constant="20" id="Ox1-Ql-Acu"/>
                             <constraint firstItem="q2x-Xc-me4" firstAttribute="top" secondItem="Msa-OM-fce" secondAttribute="top" constant="20" id="UYB-UX-fed"/>
+                            <constraint firstItem="qmU-ux-hlB" firstAttribute="leading" secondItem="fbU-FN-JGJ" secondAttribute="trailing" constant="77" id="Wy0-gB-SCH"/>
                             <constraint firstItem="Msa-OM-fce" firstAttribute="trailing" secondItem="37W-ok-mz1" secondAttribute="trailing" constant="50" id="YDM-b5-VCS"/>
                             <constraint firstItem="fbU-FN-JGJ" firstAttribute="leading" secondItem="Msa-OM-fce" secondAttribute="leading" constant="20" id="bzV-F8-Dza"/>
                             <constraint firstItem="Msa-OM-fce" firstAttribute="trailing" secondItem="4vy-Qx-P2W" secondAttribute="trailing" constant="50" id="jXm-vt-cTy"/>

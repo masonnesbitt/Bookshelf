@@ -50,7 +50,7 @@
 		B780FF3B21B1BDA300FD2194 /* clickedOnOptionPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = clickedOnOptionPage.storyboard; sourceTree = "<group>"; };
 		B7CB572821B0481200039BFC /* viewBook.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = viewBook.storyboard; sourceTree = "<group>"; };
 		DD29C71621B03F2900D34D6D /* recipescreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = recipescreen.storyboard; sourceTree = "<group>"; };
-		DD7CF4F321B978DE0007C55D /* homePage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = homePage.storyboard; path = BookShelf/StoryBoards/homePage.storyboard; sourceTree = SOURCE_ROOT; };
+		DD7CF4F321B978DE0007C55D /* homePage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = homePage.storyboard; path = BookShelf/Storyboards/Integrated/homePage.storyboard; sourceTree = SOURCE_ROOT; };
 		EDE55B6C1B18E957EEF2F945 /* Pods-BookShelf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookShelf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookShelf/Pods-BookShelf.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,7 +91,6 @@
 				7BB0BFAA21ADDECC00787427 /* Assets.xcassets */,
 				B749A97121AF17890043FF3C /* Storyboards */,
 				B749A96E21AEF8590043FF3C /* ViewControllers */,
-				7BB0BFB721ADE10F00787427 /* Login.storyboard */,
 				7BB0BFB921ADE13900787427 /* LoginViewController.swift */,
 				7BB0BFBB21ADE14800787427 /* RegisterViewController.swift */,
 				7BB0BFAF21ADDECC00787427 /* Info.plist */,
@@ -120,19 +119,36 @@
 		B749A97121AF17890043FF3C /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				DD7CF4F321B978DE0007C55D /* homePage.storyboard */,
-				B749A97421AF1E370043FF3C /* profilePage.storyboard */,
-				B7CB572821B0481200039BFC /* viewBook.storyboard */,
-				B780FF2D21B17F1200FD2194 /* searchPage.storyboard */,
-				B780FF3321B1872600FD2194 /* seachOnProfilePage.storyboard */,
-				B780FF3521B18AE800FD2194 /* yourProfile.storyboard */,
-				B780FF3721B198EC00FD2194 /* editProfile.storyboard */,
-				B780FF3921B1B98F00FD2194 /* clickedFromHomeOptionsPage.storyboard */,
-				B780FF3B21B1BDA300FD2194 /* clickedOnOptionPage.storyboard */,
-				B779FC8021B5A93A00A6F3AF /* addBook.storyboard */,
-				DD29C71621B03F2900D34D6D /* recipescreen.storyboard */,
+				DD7CF4F621B99CC20007C55D /* To-Do */,
+				DD7CF4F521B99CAD0007C55D /* Integrated */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DD7CF4F521B99CAD0007C55D /* Integrated */ = {
+			isa = PBXGroup;
+			children = (
+				B780FF3521B18AE800FD2194 /* yourProfile.storyboard */,
+				7BB0BFB721ADE10F00787427 /* Login.storyboard */,
+				DD7CF4F321B978DE0007C55D /* homePage.storyboard */,
+				B780FF3721B198EC00FD2194 /* editProfile.storyboard */,
+				B780FF3921B1B98F00FD2194 /* clickedFromHomeOptionsPage.storyboard */,
+				B779FC8021B5A93A00A6F3AF /* addBook.storyboard */,
+			);
+			path = Integrated;
+			sourceTree = "<group>";
+		};
+		DD7CF4F621B99CC20007C55D /* To-Do */ = {
+			isa = PBXGroup;
+			children = (
+				B780FF2D21B17F1200FD2194 /* searchPage.storyboard */,
+				B749A97421AF1E370043FF3C /* profilePage.storyboard */,
+				B7CB572821B0481200039BFC /* viewBook.storyboard */,
+				B780FF3321B1872600FD2194 /* seachOnProfilePage.storyboard */,
+				B780FF3B21B1BDA300FD2194 /* clickedOnOptionPage.storyboard */,
+				DD29C71621B03F2900D34D6D /* recipescreen.storyboard */,
+			);
+			path = "To-Do";
 			sourceTree = "<group>";
 		};
 		E70C1DE5940D48EF15D1B7C3 /* Frameworks */ = {
