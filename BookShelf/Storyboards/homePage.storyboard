@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q89-ku-Ct5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gc4-SS-EHQ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Login-->
+        <scene sceneID="8fW-Ao-w06">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="loginPage" storyboardName="Login" id="UnE-0P-Yip" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hY6-rl-Ofv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="783" y="-556"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="D4D-pe-MAI">
             <objects>
@@ -19,14 +27,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jC-Og-dD6">
-                                <rect key="frame" x="45" y="147" width="285" height="35"/>
+                                <rect key="frame" x="45" y="191" width="285" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Search for a User, Book or Recipe">
                                     <color key="titleColor" red="0.74597231220000004" green="0.1151320319" blue="0.09921503274" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWg-u0-xLj">
-                                <rect key="frame" x="50" y="307" width="125" height="90"/>
+                                <rect key="frame" x="50" y="351" width="125" height="90"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="5ug-LO-Oa4"/>
@@ -36,9 +44,12 @@
                                 <state key="normal" title="Recent">
                                     <color key="titleColor" red="0.92369656739999995" green="0.81537581110000001" blue="0.11058001319999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fYF-A8-Q4x" kind="show" identifier="recentSegue" id="0nX-VR-ef2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vy-Qx-P2W">
-                                <rect key="frame" x="200" y="307" width="125" height="90"/>
+                                <rect key="frame" x="200" y="351" width="125" height="90"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="gZP-Nl-rxC"/>
@@ -48,6 +59,9 @@
                                 <state key="normal" title="Popular">
                                     <color key="titleColor" red="0.92369656739999995" green="0.81537581110000001" blue="0.11058001319999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fYF-A8-Q4x" kind="show" identifier="randomSegue" id="GNh-KX-qyA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zV-HW-uch">
                                 <rect key="frame" x="50" y="487" width="125" height="90"/>
@@ -60,6 +74,9 @@
                                 <state key="normal" title="Friends">
                                     <color key="titleColor" red="0.92369656739999995" green="0.81537581110000001" blue="0.11058001319999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fYF-A8-Q4x" kind="show" identifier="friendsSegue" id="HsX-gn-SWN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37W-ok-mz1">
                                 <rect key="frame" x="200" y="487" width="125" height="90"/>
@@ -72,19 +89,34 @@
                                 <state key="normal" title="Random">
                                     <color key="titleColor" red="0.92369656739999995" green="0.81537581110000001" blue="0.11058001319999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fYF-A8-Q4x" kind="show" identifier="randomSegue" id="eRn-vC-pHQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2x-Xc-me4">
-                                <rect key="frame" x="282" y="40" width="73" height="32"/>
+                                <rect key="frame" x="282" y="84" width="73" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="My Profile">
                                     <color key="titleColor" red="0.81970531089999998" green="0.001134413421" blue="0.73548169200000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="VMx-ol-daO" kind="show" identifier="myProfileSegue" id="gQV-ro-cOg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbU-FN-JGJ">
-                                <rect key="frame" x="20" y="40" width="48" height="30"/>
+                                <rect key="frame" x="20" y="84" width="48" height="30"/>
                                 <state key="normal" title="Logout">
                                     <color key="titleColor" red="0.70039921179999998" green="1" blue="0.93077274750000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="UnE-0P-Yip" kind="show" identifier="logoutSegue" id="3g0-W2-IGS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmU-ux-hlB">
+                                <rect key="frame" x="145" y="41" width="85" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Add Book"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -107,10 +139,48 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Msa-OM-fce"/>
                     </view>
+                    <navigationItem key="navigationItem" id="uQZ-5j-xZP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="De3-mN-3EJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="85.599999999999994" y="165.06746626686657"/>
+            <point key="canvasLocation" x="244" y="0.0"/>
+        </scene>
+        <!--yourProfile-->
+        <scene sceneID="Tyt-5H-zow">
+            <objects>
+                <viewControllerPlaceholder storyboardName="yourProfile" referencedIdentifier="yourProfile" id="VMx-ol-daO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9wD-WD-XyC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2052" y="23.388305847076463"/>
+        </scene>
+        <!--clickedFromHomeOptionsPage-->
+        <scene sceneID="zXd-GL-hCz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="clickedFromHomeOptionsPage" referencedIdentifier="clickedFromHomeOptionsPage" id="fYF-A8-Q4x" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fi3-TN-tpo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244" y="555"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sOp-5a-gNX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gc4-SS-EHQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1XN-nT-FHr">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="q89-ku-Ct5" kind="relationship" relationship="rootViewController" id="Tht-HW-CqW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="87M-gV-aGi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-692" y="0.0"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="HsX-gn-SWN"/>
+    </inferredMetricsTieBreakers>
 </document>
