@@ -40,6 +40,9 @@
                                 <state key="normal" title="Search for a User, Book or Recipe">
                                     <color key="titleColor" red="0.74597231220000004" green="0.1151320319" blue="0.09921503274" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="tAB-My-b1A" kind="show" id="ek5-KY-T7d"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWg-u0-xLj">
                                 <rect key="frame" x="50" y="351" width="125" height="90"/>
@@ -191,6 +194,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="87M-gV-aGi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-692" y="0.0"/>
+        </scene>
+        <!--searchPage-->
+        <scene sceneID="sgL-sA-IOK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="searchPage" referencedIdentifier="searchPage" id="tAB-My-b1A" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cRB-6B-902" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1281" y="-207"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
