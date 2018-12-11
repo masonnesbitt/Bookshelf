@@ -8,12 +8,34 @@
 
 import UIKit
 
-class ViewController: UITableViewController {
+class SearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-
-  override  func viewDidLoad() {
+    @IBOutlet weak var tableView: UITableView!
     
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view, typically from a nib.
     }
     
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
+
     
 }

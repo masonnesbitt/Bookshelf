@@ -30,6 +30,11 @@
 		DD7CF50321BAC9A00007C55D /* SecondSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CF50221BAC9A00007C55D /* SecondSearchTableViewCell.swift */; };
 		DD7CF50521BAC9AF0007C55D /* ThirdSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CF50421BAC9AF0007C55D /* ThirdSearchTableViewCell.swift */; };
 		DD7CF50721BAD0E00007C55D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CF50621BAD0E00007C55D /* SearchViewController.swift */; };
+		DDADF17321BADA0900143B4B /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDADF17221BADA0900143B4B /* Recipe.swift */; };
+		DDADF17621BAF62200143B4B /* Recipe Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDADF17521BAF62200143B4B /* Recipe Array.swift */; };
+		DDADF17821BF91F400143B4B /* RecipeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDADF17721BF91F400143B4B /* RecipeManager.swift */; };
+		DDADF17A21BF936E00143B4B /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDADF17921BF936E00143B4B /* Book.swift */; };
+		DDADF17F21BF938D00143B4B /* BookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDADF17E21BF938D00143B4B /* BookManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +64,11 @@
 		DD7CF50221BAC9A00007C55D /* SecondSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSearchTableViewCell.swift; sourceTree = "<group>"; };
 		DD7CF50421BAC9AF0007C55D /* ThirdSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdSearchTableViewCell.swift; sourceTree = "<group>"; };
 		DD7CF50621BAD0E00007C55D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		DDADF17221BADA0900143B4B /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		DDADF17521BAF62200143B4B /* Recipe Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe Array.swift"; sourceTree = "<group>"; };
+		DDADF17721BF91F400143B4B /* RecipeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeManager.swift; sourceTree = "<group>"; };
+		DDADF17921BF936E00143B4B /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		DDADF17E21BF938D00143B4B /* BookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookManager.swift; sourceTree = "<group>"; };
 		EDE55B6C1B18E957EEF2F945 /* Pods-BookShelf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookShelf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookShelf/Pods-BookShelf.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +109,7 @@
 				7BB0BFA321ADDECB00787427 /* AppDelegate.swift */,
 				7BB0BFAA21ADDECC00787427 /* Assets.xcassets */,
 				7BB0BFAF21ADDECC00787427 /* Info.plist */,
+				DDADF17421BAF60F00143B4B /* Arrays */,
 				DD7CF50821BAD7780007C55D /* Objects */,
 				B749A97121AF17890043FF3C /* Storyboards */,
 				DD7CF4F921BAC8060007C55D /* Custom */,
@@ -175,8 +186,20 @@
 		DD7CF50821BAD7780007C55D /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				DDADF17221BADA0900143B4B /* Recipe.swift */,
+				DDADF17921BF936E00143B4B /* Book.swift */,
 			);
 			path = Objects;
+			sourceTree = "<group>";
+		};
+		DDADF17421BAF60F00143B4B /* Arrays */ = {
+			isa = PBXGroup;
+			children = (
+				DDADF17521BAF62200143B4B /* Recipe Array.swift */,
+				DDADF17721BF91F400143B4B /* RecipeManager.swift */,
+				DDADF17E21BF938D00143B4B /* BookManager.swift */,
+			);
+			path = Arrays;
 			sourceTree = "<group>";
 		};
 		E70C1DE5940D48EF15D1B7C3 /* Frameworks */ = {
@@ -298,6 +321,8 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
@@ -312,6 +337,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
@@ -332,10 +359,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDADF17621BAF62200143B4B /* Recipe Array.swift in Sources */,
+				DDADF17821BF91F400143B4B /* RecipeManager.swift in Sources */,
 				DD7CF4FF21BAC94A0007C55D /* FirstSearchTableViewCell.swift in Sources */,
+				DDADF17A21BF936E00143B4B /* Book.swift in Sources */,
 				7BB0BFBC21ADE14800787427 /* RegisterViewController.swift in Sources */,
 				DD7CF50721BAD0E00007C55D /* SearchViewController.swift in Sources */,
+				DDADF17F21BF938D00143B4B /* BookManager.swift in Sources */,
 				7BB0BFBA21ADE13900787427 /* LoginViewController.swift in Sources */,
+				DDADF17321BADA0900143B4B /* Recipe.swift in Sources */,
 				DD7CF50521BAC9AF0007C55D /* ThirdSearchTableViewCell.swift in Sources */,
 				7BB0BFA421ADDECB00787427 /* AppDelegate.swift in Sources */,
 				DD7CF50321BAC9A00007C55D /* SecondSearchTableViewCell.swift in Sources */,
