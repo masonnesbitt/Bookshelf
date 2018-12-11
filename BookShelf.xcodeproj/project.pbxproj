@@ -35,6 +35,7 @@
 		DDADF17821BF91F400143B4B /* RecipeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDADF17721BF91F400143B4B /* RecipeManager.swift */; };
 		DDADF17A21BF936E00143B4B /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDADF17921BF936E00143B4B /* Book.swift */; };
 		DDADF17F21BF938D00143B4B /* BookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDADF17E21BF938D00143B4B /* BookManager.swift */; };
+		DDADF18121BF9A1600143B4B /* BookDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDADF18021BF9A1600143B4B /* BookDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		DDADF17721BF91F400143B4B /* RecipeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeManager.swift; sourceTree = "<group>"; };
 		DDADF17921BF936E00143B4B /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		DDADF17E21BF938D00143B4B /* BookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookManager.swift; sourceTree = "<group>"; };
+		DDADF18021BF9A1600143B4B /* BookDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailsViewController.swift; sourceTree = "<group>"; };
 		EDE55B6C1B18E957EEF2F945 /* Pods-BookShelf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookShelf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookShelf/Pods-BookShelf.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +135,7 @@
 				DD7CF50621BAD0E00007C55D /* SearchViewController.swift */,
 				7BB0BFB921ADE13900787427 /* LoginViewController.swift */,
 				7BB0BFBB21ADE14800787427 /* RegisterViewController.swift */,
+				DDADF18021BF9A1600143B4B /* BookDetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 			files = (
 				DDADF17621BAF62200143B4B /* Recipe Array.swift in Sources */,
 				DDADF17821BF91F400143B4B /* RecipeManager.swift in Sources */,
+				DDADF18121BF9A1600143B4B /* BookDetailsViewController.swift in Sources */,
 				DD7CF4FF21BAC94A0007C55D /* FirstSearchTableViewCell.swift in Sources */,
 				DDADF17A21BF936E00143B4B /* Book.swift in Sources */,
 				7BB0BFBC21ADE14800787427 /* RegisterViewController.swift in Sources */,

@@ -19,5 +19,6 @@ class Book: Object {
     @objc dynamic var bookDescription:String = ""
     @objc dynamic var bookOwner:String = ""
     @objc dynamic var bookPicture:UIImage = UIImage(named: "bookImage")
+    @objc dynamic var bookLocation:String = ""
 
 }

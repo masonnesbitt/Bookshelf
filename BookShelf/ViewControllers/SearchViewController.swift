@@ -13,6 +13,18 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var tableView: UITableView!
     
     
+    @IBAction func unwindToBookTable(segue:UIStoryboardSegue) {
+    }
+    var currentBook: Book!
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as?
+            BookDetailsViewController {
+            destination.taskDescription = currentTask
+            destination.taskTitle = currentTask
+            
+        }
+    }
     
     
     override func viewDidLoad() {
