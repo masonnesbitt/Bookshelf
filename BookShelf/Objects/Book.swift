@@ -14,11 +14,10 @@ import UIKit
 class Book: Object {
     
     
-
+    var bookPicture:UIImage = UIImage()
     @objc dynamic var bookTitle:String = ""
     @objc dynamic var bookDescription:String = ""
     @objc dynamic var bookOwner:String = ""
-    @objc dynamic var bookPicture:UIImage = UIImage(named: "bookImage")
     @objc dynamic var bookLocation:String = ""
 
 }

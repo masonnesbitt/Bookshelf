@@ -17,7 +17,6 @@ class Recipe: Object {
 
     @objc dynamic var recipeTitle:String = ""
     @objc dynamic var recipeDesc:String = ""
-    @objc dynamic var recipePicture:UIImage = UIImage(named: "recipeImage")
     @objc dynamic var recipeIngrediants:String = ""
     @objc dynamic var recipeProcedure:String = ""
 

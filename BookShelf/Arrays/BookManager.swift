@@ -15,7 +15,7 @@ class BookManager {
     
     
     private init() {
-        books = realm.objects(Task.self)
+        books = realm.objects(Book.self)
     }
     private var  books: Results<Book>!
     

@@ -11,4 +11,31 @@ import RealmSwift
 
 class RecipeManager {
     
+    static let sharedInstance = RecipeManager()
+    
+    private init() {
+        recipes = realm.objects(Recipe.self)
+    }
+    private var  recipes: Results<Recipe>!
+    
+    let realm = try! Realm()
+    func getRecipeCount()-> Int {
+        return recipes.count
+    }
+    
+    func getRecipe(at index: Int) -> Recipe {
+        return recipes[index]
+    }
+    
+    func addRecipe(recipe: Recipe) {
+        try! realm.write {
+            realm.add(recipe)
+        }
+    }
+    
+    func removeRecipe(at index: Int) {
+        try! realm.write {
+            realm.delete(getRecipe(at: index))
+        }
+    }
 }
