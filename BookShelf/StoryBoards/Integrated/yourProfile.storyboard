@@ -10,22 +10,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Profile Page View Controller-->
         <scene sceneID="nc9-bG-gNn">
             <objects>
-                <viewController storyboardIdentifier="yourProfile" id="A5d-wb-djX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="yourProfile" id="A5d-wb-djX" customClass="ProfilePageViewController" customModule="BookShelf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l2v-US-OYp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IlX-dW-h8s">
-                                <rect key="frame" x="111" y="159.5" width="152" height="130"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookshelf chef" translatesAutoresizingMaskIntoConstraints="NO" id="IlX-dW-h8s">
+                                <rect key="frame" x="111" y="203.5" width="152" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="tGf-pq-qnv"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQy-qy-lJg">
-                                <rect key="frame" x="113" y="60" width="150" height="24"/>
+                                <rect key="frame" x="113" y="104" width="150" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="id9-fZ-YqM"/>
                                 </constraints>
@@ -34,19 +34,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbi-YC-uov">
-                                <rect key="frame" x="280" y="40" width="75" height="30"/>
+                                <rect key="frame" x="280" y="84" width="75" height="30"/>
                                 <state key="normal" title="Edit Profile">
-                                    <color key="titleColor" red="0.0" green="1" blue="0.29934893559999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="x0r-zr-4s9" kind="show" identifier="editProfile" id="mz5-q2-0La"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OgV-eQ-cgA">
-                                <rect key="frame" x="20" y="309.5" width="335" height="337.5"/>
+                                <rect key="frame" x="20" y="353.5" width="335" height="293.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="75" id="70K-81-L5U">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="75" id="70K-81-L5U" customClass="SecondSearchTableViewCell" customModule="BookShelf" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="335" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="70K-81-L5U" id="BeK-5B-DJo">
@@ -57,13 +57,13 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YzS-pn-Fxm">
-                                <rect key="frame" x="113" y="114" width="150" height="20.5"/>
+                                <rect key="frame" x="113" y="158" width="150" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.98920238289999995" blue="0.83104083829999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="IlX-dW-h8s" firstAttribute="leading" secondItem="cKs-9Q-tbL" secondAttribute="leading" constant="111" id="DjN-SR-QfF"/>
                             <constraint firstItem="OgV-eQ-cgA" firstAttribute="top" secondItem="IlX-dW-h8s" secondAttribute="bottom" constant="20" id="EwR-8a-dJ8"/>
@@ -83,10 +83,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cKs-9Q-tbL"/>
                     </view>
+                    <navigationItem key="navigationItem" id="26V-PX-urw"/>
+                    <connections>
+                        <outlet property="userBookTable" destination="OgV-eQ-cgA" id="Zy7-IL-aER"/>
+                        <outlet property="userLocationLabel" destination="YzS-pn-Fxm" id="cKU-Fo-sGt"/>
+                        <outlet property="userNameLabel" destination="UQy-qy-lJg" id="ji5-wI-vlt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qP6-eR-M8O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="45.600000000000001" y="158.77061469265368"/>
+            <point key="canvasLocation" x="984.79999999999995" y="158.77061469265368"/>
         </scene>
         <!--editProfile-->
         <scene sceneID="t07-to-lqz">
@@ -94,7 +100,28 @@
                 <viewControllerPlaceholder storyboardName="editProfile" referencedIdentifier="editProfile" id="x0r-zr-4s9" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pla-PZ-App" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="796" y="-137"/>
+            <point key="canvasLocation" x="1734.4000000000001" y="-137.6311844077961"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vD5-bG-FRE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bvd-ay-MvP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ny6-VI-1GL">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="A5d-wb-djX" kind="relationship" relationship="rootViewController" id="aDx-x0-BOM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fAe-Zi-5FZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45.600000000000001" y="158.77061469265368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bookshelf chef" width="1024" height="1024"/>
+    </resources>
 </document>

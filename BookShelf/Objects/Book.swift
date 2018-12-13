@@ -8,13 +8,13 @@
 
 import Foundation
 import RealmSwift
-import UIKit
+
 
 
 class Book: Object {
     
     
-    var bookPicture:UIImage = UIImage()
+//    @objc dynamic var bookPicture:UIImageView = UIImage()
     @objc dynamic var bookTitle:String = ""
     @objc dynamic var bookDescription:String = ""
     @objc dynamic var bookOwner:String = ""

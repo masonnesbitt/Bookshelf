@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Add Book View Controller-->
         <scene sceneID="RI4-Io-5Ua">
             <objects>
-                <viewController storyboardIdentifier="addBook" id="dkn-dA-6vx" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="addBook" id="dkn-dA-6vx" customClass="AddBookViewController" customModule="BookShelf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L2E-KZ-GP8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,49 +28,52 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GM6-48-WST">
-                                        <rect key="frame" x="0.0" y="34" width="335" height="30"/>
+                                        <rect key="frame" x="0.0" y="35.5" width="335" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Description:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRH-tc-9Av">
-                                        <rect key="frame" x="0.0" y="77.5" width="335" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="80.5" width="335" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8rw-Ck-h28">
-                                        <rect key="frame" x="0.0" y="112" width="335" height="30"/>
+                                        <rect key="frame" x="0.0" y="116" width="335" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2H6-Zp-4SJ">
-                                        <rect key="frame" x="0.0" y="155.5" width="335" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="161" width="335" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h6Z-yt-fEy">
-                                        <rect key="frame" x="0.0" y="189.5" width="335" height="30"/>
+                                        <rect key="frame" x="0.0" y="196.5" width="335" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Photo:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Dw-Fn-FA9">
-                                        <rect key="frame" x="0.0" y="233" width="335" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="241.5" width="335" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mWQ-Wb-PWd">
-                                        <rect key="frame" x="0.0" y="253.5" width="335" height="233.5"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookImage" translatesAutoresizingMaskIntoConstraints="NO" id="mWQ-Wb-PWd">
+                                        <rect key="frame" x="0.0" y="262" width="335" height="225"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cs-eK-vta">
                                         <rect key="frame" x="0.0" y="487" width="335" height="36"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Add Book"/>
+                                        <connections>
+                                            <action selector="submitButtonTapped:" destination="dkn-dA-6vx" eventType="touchUpInside" id="KAu-y0-ui6"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -85,6 +88,13 @@
                         <viewLayoutGuide key="safeArea" id="wy3-Gc-qUK"/>
                     </view>
                     <navigationItem key="navigationItem" id="Rbd-rh-0FG"/>
+                    <connections>
+                        <outlet property="addBookButton" destination="8Cs-eK-vta" id="Xfg-iN-XYp"/>
+                        <outlet property="bookDescField" destination="8rw-Ck-h28" id="kTc-59-03l"/>
+                        <outlet property="bookImageSelector" destination="mWQ-Wb-PWd" id="3Eo-Z6-2Nk"/>
+                        <outlet property="bookLocationField" destination="h6Z-yt-fEy" id="et7-0L-QDY"/>
+                        <outlet property="bookTitleField" destination="GM6-48-WST" id="SL4-SO-Dd1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u9u-0e-d6h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -109,4 +119,7 @@
             <point key="canvasLocation" x="85.599999999999994" y="169.56521739130437"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bookImage" width="225" height="225"/>
+    </resources>
 </document>

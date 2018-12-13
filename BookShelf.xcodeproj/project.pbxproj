@@ -23,18 +23,19 @@
 		B780FF3A21B1B98F00FD2194 /* clickedFromHomeOptionsPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B780FF3921B1B98F00FD2194 /* clickedFromHomeOptionsPage.storyboard */; };
 		B780FF3C21B1BDA300FD2194 /* clickedOnOptionPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B780FF3B21B1BDA300FD2194 /* clickedOnOptionPage.storyboard */; };
 		B7CB572921B0481200039BFC /* viewBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7CB572821B0481200039BFC /* viewBook.storyboard */; };
+		DD089BCF21C29F8B000DC9B5 /* ProfilePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD089BCE21C29F8B000DC9B5 /* ProfilePageViewController.swift */; };
 		DD29C71721B03F2900D34D6D /* addRecipe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD29C71621B03F2900D34D6D /* addRecipe.storyboard */; };
 		DD7CF4F421B978DE0007C55D /* homePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD7CF4F321B978DE0007C55D /* homePage.storyboard */; };
 		DD7CF4F821BAC3520007C55D /* recipePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD7CF4F721BAC3520007C55D /* recipePage.storyboard */; };
-		DD7CF4FF21BAC94A0007C55D /* FirstSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CF4FE21BAC94A0007C55D /* FirstSearchTableViewCell.swift */; };
 		DD7CF50321BAC9A00007C55D /* SecondSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CF50221BAC9A00007C55D /* SecondSearchTableViewCell.swift */; };
-		DD7CF50521BAC9AF0007C55D /* ThirdSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CF50421BAC9AF0007C55D /* ThirdSearchTableViewCell.swift */; };
 		DD7CF50721BAD0E00007C55D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CF50621BAD0E00007C55D /* SearchViewController.swift */; };
+		DD9F27AB21C2AE1A00909DBE /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F27AA21C2AE1A00909DBE /* EditProfileViewController.swift */; };
+		DD9F27AD21C2B50000909DBE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F27AC21C2B50000909DBE /* User.swift */; };
+		DD9F27AF21C31A0800909DBE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9F27AE21C31A0800909DBE /* Launch Screen.storyboard */; };
 		DDADF17321BADA0900143B4B /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDADF17221BADA0900143B4B /* Recipe.swift */; };
 		DDADF17821BF91F400143B4B /* RecipeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDADF17721BF91F400143B4B /* RecipeManager.swift */; };
 		DDADF17A21BF936E00143B4B /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDADF17921BF936E00143B4B /* Book.swift */; };
 		DDADF17F21BF938D00143B4B /* BookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDADF17E21BF938D00143B4B /* BookManager.swift */; };
-		DDADF18121BF9A1600143B4B /* ViewBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDADF18021BF9A1600143B4B /* ViewBookViewController.swift */; };
 		DDADF18321BFFC1F00143B4B /* AddBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDADF18221BFFC1F00143B4B /* AddBookViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,18 +59,19 @@
 		B780FF3921B1B98F00FD2194 /* clickedFromHomeOptionsPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = clickedFromHomeOptionsPage.storyboard; sourceTree = "<group>"; };
 		B780FF3B21B1BDA300FD2194 /* clickedOnOptionPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = clickedOnOptionPage.storyboard; sourceTree = "<group>"; };
 		B7CB572821B0481200039BFC /* viewBook.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = viewBook.storyboard; sourceTree = "<group>"; };
+		DD089BCE21C29F8B000DC9B5 /* ProfilePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageViewController.swift; sourceTree = "<group>"; };
 		DD29C71621B03F2900D34D6D /* addRecipe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = addRecipe.storyboard; sourceTree = "<group>"; };
 		DD7CF4F321B978DE0007C55D /* homePage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = homePage.storyboard; path = BookShelf/Storyboards/Integrated/homePage.storyboard; sourceTree = SOURCE_ROOT; };
 		DD7CF4F721BAC3520007C55D /* recipePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = recipePage.storyboard; path = "BookShelf/StoryBoards/To-Do/recipePage.storyboard"; sourceTree = SOURCE_ROOT; };
-		DD7CF4FE21BAC94A0007C55D /* FirstSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSearchTableViewCell.swift; sourceTree = "<group>"; };
 		DD7CF50221BAC9A00007C55D /* SecondSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSearchTableViewCell.swift; sourceTree = "<group>"; };
-		DD7CF50421BAC9AF0007C55D /* ThirdSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdSearchTableViewCell.swift; sourceTree = "<group>"; };
 		DD7CF50621BAD0E00007C55D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		DD9F27AA21C2AE1A00909DBE /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		DD9F27AC21C2B50000909DBE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DD9F27AE21C31A0800909DBE /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "BookShelf/StoryBoards/Integrated/Launch Screen.storyboard"; sourceTree = SOURCE_ROOT; };
 		DDADF17221BADA0900143B4B /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		DDADF17721BF91F400143B4B /* RecipeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeManager.swift; sourceTree = "<group>"; };
 		DDADF17921BF936E00143B4B /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		DDADF17E21BF938D00143B4B /* BookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookManager.swift; sourceTree = "<group>"; };
-		DDADF18021BF9A1600143B4B /* ViewBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBookViewController.swift; sourceTree = "<group>"; };
 		DDADF18221BFFC1F00143B4B /* AddBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookViewController.swift; sourceTree = "<group>"; };
 		EDE55B6C1B18E957EEF2F945 /* Pods-BookShelf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookShelf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookShelf/Pods-BookShelf.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,8 +137,9 @@
 				DD7CF50621BAD0E00007C55D /* SearchViewController.swift */,
 				7BB0BFB921ADE13900787427 /* LoginViewController.swift */,
 				7BB0BFBB21ADE14800787427 /* RegisterViewController.swift */,
-				DDADF18021BF9A1600143B4B /* ViewBookViewController.swift */,
 				DDADF18221BFFC1F00143B4B /* AddBookViewController.swift */,
+				DD089BCE21C29F8B000DC9B5 /* ProfilePageViewController.swift */,
+				DD9F27AA21C2AE1A00909DBE /* EditProfileViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				B780FF3721B198EC00FD2194 /* editProfile.storyboard */,
 				B780FF3921B1B98F00FD2194 /* clickedFromHomeOptionsPage.storyboard */,
 				B779FC8021B5A93A00A6F3AF /* addBook.storyboard */,
+				DD9F27AE21C31A0800909DBE /* Launch Screen.storyboard */,
 			);
 			path = Integrated;
 			sourceTree = "<group>";
@@ -180,9 +184,7 @@
 		DD7CF4F921BAC8060007C55D /* Custom */ = {
 			isa = PBXGroup;
 			children = (
-				DD7CF4FE21BAC94A0007C55D /* FirstSearchTableViewCell.swift */,
 				DD7CF50221BAC9A00007C55D /* SecondSearchTableViewCell.swift */,
-				DD7CF50421BAC9AF0007C55D /* ThirdSearchTableViewCell.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -192,6 +194,7 @@
 			children = (
 				DDADF17221BADA0900143B4B /* Recipe.swift */,
 				DDADF17921BF936E00143B4B /* Book.swift */,
+				DD9F27AC21C2B50000909DBE /* User.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			files = (
 				DD29C71721B03F2900D34D6D /* addRecipe.storyboard in Resources */,
 				DD7CF4F821BAC3520007C55D /* recipePage.storyboard in Resources */,
+				DD9F27AF21C31A0800909DBE /* Launch Screen.storyboard in Resources */,
 				B779FC8121B5A93A00A6F3AF /* addBook.storyboard in Resources */,
 				B780FF3821B198EC00FD2194 /* editProfile.storyboard in Resources */,
 				7BB0BFAB21ADDECC00787427 /* Assets.xcassets in Resources */,
@@ -362,17 +366,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD9F27AD21C2B50000909DBE /* User.swift in Sources */,
+				DD9F27AB21C2AE1A00909DBE /* EditProfileViewController.swift in Sources */,
 				DDADF17821BF91F400143B4B /* RecipeManager.swift in Sources */,
-				DDADF18121BF9A1600143B4B /* ViewBookViewController.swift in Sources */,
 				DDADF18321BFFC1F00143B4B /* AddBookViewController.swift in Sources */,
-				DD7CF4FF21BAC94A0007C55D /* FirstSearchTableViewCell.swift in Sources */,
 				DDADF17A21BF936E00143B4B /* Book.swift in Sources */,
+				DD089BCF21C29F8B000DC9B5 /* ProfilePageViewController.swift in Sources */,
 				7BB0BFBC21ADE14800787427 /* RegisterViewController.swift in Sources */,
 				DD7CF50721BAD0E00007C55D /* SearchViewController.swift in Sources */,
 				DDADF17F21BF938D00143B4B /* BookManager.swift in Sources */,
 				7BB0BFBA21ADE13900787427 /* LoginViewController.swift in Sources */,
 				DDADF17321BADA0900143B4B /* Recipe.swift in Sources */,
-				DD7CF50521BAC9AF0007C55D /* ThirdSearchTableViewCell.swift in Sources */,
 				7BB0BFA421ADDECB00787427 /* AppDelegate.swift in Sources */,
 				DD7CF50321BAC9A00007C55D /* SecondSearchTableViewCell.swift in Sources */,
 			);

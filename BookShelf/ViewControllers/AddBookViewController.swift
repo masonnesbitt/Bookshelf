@@ -57,12 +57,17 @@ class AddBookViewController: UIViewController {
                 return
                 
             }
+            guard let location = bookLocationField.text, location.trimmingCharacters(in: .whitespacesAndNewlines) != "" else {
+                showError()
+                return
+                
+            }
             
             
             let newBook = Book()
             newBook.bookTitle = title
             newBook.bookDescription = description
-            newBook.bookPicture = UIImage(named: "bookImage")!
+            newBook.bookLocation = location
             
             BookManager.sharedInstance.addBook(book: newBook)
     
